@@ -1,0 +1,221 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f7f6f9;
+}
+.container-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container-content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: self-start;
+  padding: 60px;
+  gap: 40px;
+  margin-bottom: 250px;
+}
+
+#content1 {
+  flex: 1;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#content1 button {
+  padding: 20px;
+  border-radius: 12px;
+  border: 2px solid white;
+  cursor: pointer;
+  background-color: #ffec97;
+  margin-top: 5px;
+  align-self: flex-start;
+}
+
+#title h3 {
+  font-size: 48px;
+  margin: 0;
+  line-height: 1.2;
+  font-weight: bold;
+}
+
+#content2 {
+  flex: 1;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  font-size: 18px;
+  color: #333;
+  text-align: justify;
+}
+
+.navbar {
+  border-radius: 8px;
+  background-color: #050505;
+  margin-top: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 20px 30px;
+}
+
+.title {
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+}
+
+.menu {
+  margin: 0;
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.menu li {
+  padding-left: 0;
+  margin-right: 10px;
+}
+
+.menu li a {
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.menu li a:hover {
+  text-decoration: underline;
+  transition: 1s;
+  color: slategrey;
+}
+
+input[type="text"] {
+  margin-bottom: 20px;
+  border: 2px solid lightblue;
+  border-radius: 8px;
+  padding: 12px;
+  width: 500px;
+}
+
+input[type="email"] {
+  margin-bottom: 20px;
+  border: 2px solid lightblue;
+  border-radius: 8px;
+  padding: 12px;
+  width: 500px;
+}
+
+textarea {
+  border: 2px solid lightblue;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 20px;
+  resize: none;
+  width: 500px;
+  height: 150px;
+}
+
+input[type="submit"] {
+  border: 2px solid lightblue;
+  color: white;
+  background-color: #0046ff;
+  border-radius: 8px;
+  padding: 12px;
+  cursor: pointer;
+  width: 200px;
+}
+
+input[type="submit"]:hover {
+  color: whitesmoke;
+  background-color: blue;
+}
+
+.container-form {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  margin: 200px auto 50px auto;
+  max-width: 900px;
+  min-height: 100vh;
+  border-radius: 12px;
+}
+
+#form h3 {
+  font-size: 25px;
+  text-align: justify;
+}
+
+#form {
+  flex: 1;
+  text-align: justify;
+}
+
+#image-form {
+  padding: 30px;
+  margin: 30px;
+  margin-left: 100px;
+}
+
+label,
+.logo,
+.title {
+  font-family: "0xProto Nerd Font";
+}
+
+.container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 20px;
+  padding: 12px;
+  margin: 12px;
+  margin-bottom: 250px;
+}
+
+.info-card {
+  display: flex;
+  gap: 20px;
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 350px;
+}
+
+.info-card img {
+  max-width: 120px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.info-card-content p {
+  font-size: 15px;
+}
+
+.info-card-content button {
+  padding: 20px;
+  border-radius: 12px;
+  border: 2px solid white;
+  cursor: pointer;
+  background-color: #ffec97;
+  margin-top: 5px;
+}

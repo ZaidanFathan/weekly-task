@@ -11,7 +11,6 @@
     <nav class="navbar">
       <div class="container-nav">
         <span class="logo">CatPedia</span>
-        <!-- Tambahkan ini untuk burger button -->
         <div class="burger">
           <span></span>
           <span></span>
@@ -146,24 +145,67 @@
           <button>Baca Selengkapnya</button>
         </div>
       </div>
+      <div class="info-card">
+        <div class="info-card-img">
+          <img src="src/img/persian.jpg" alt="Persian Cat" />
+        </div>
+        <div class="info-card-content">
+          <h2>Russian Blue</h2>
+          <p>
+            Kucing Russian Blue berasal dari daerah pelabuhan Arkhangelsk,
+            Rusia. Kucing jenis ini memiliki bulu yang anggun dan mata hijau
+            yang berkilau.
+          </p>
+          <p>
+            Lapisan bulu Kucing Russian Blue sangat berbeda dengan jenis kucing
+            lainnya, yakni berwarna perak biru, berukuran pendek, tebal, dan
+            sangat halus.
+          </p>
+          <button>Baca Selengkapnya</button>
+        </div>
+      </div>
+      <div class="info-card">
+        <div class="info-card-img">
+          <img src="src/img/persian.jpg" alt="Persian Cat" />
+        </div>
+        <div class="info-card-content">
+          <h2>Russian Blue</h2>
+          <p>
+            Kucing Russian Blue berasal dari daerah pelabuhan Arkhangelsk,
+            Rusia. Kucing jenis ini memiliki bulu yang anggun dan mata hijau
+            yang berkilau.
+          </p>
+          <p>
+            Lapisan bulu Kucing Russian Blue sangat berbeda dengan jenis kucing
+            lainnya, yakni berwarna perak biru, berukuran pendek, tebal, dan
+            sangat halus.
+          </p>
+          <button>Baca Selengkapnya</button>
+        </div>
+      </div>
     </div>
+
+    <!-- Alert Box -->
+    <div class="alert-container"></div>
+
+    <!-- End Alert Box -->
 
     <!-- Form kontak -->
     <div class="container-form">
       <div id="form">
         <h3>Masukan Dan Saran</h3>
 
-        <form action="" id="form">
+        <form action="#" id="form">
           <label for="name">Nama Anda </label><br />
-          <input type="text" required />
+          <input type="text" />
           <br />
           <label for="email">Email </label><br />
-          <input type="email" required />
+          <input type="email" />
           <br />
           <label for="detail">Masukan Dan Saran Anda </label><br />
-          <textarea required></textarea>
+          <textarea id="feedback"></textarea>
           <br />
-          <input type="submit" value="Submit" />
+          <input type="submit" value="Submit" onclick="submitFeedback(event)" />
         </form>
       </div>
       <div id="side-form"></div>

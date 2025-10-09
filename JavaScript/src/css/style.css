@@ -318,7 +318,6 @@ label,
   color: black;
 }
 
-/* Animasi muncul */
 @keyframes slideUp {
   from {
     opacity: 0;
@@ -327,6 +326,77 @@ label,
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.burger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 26px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.burger span {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.container-nav {
+  display: flex;
+  justify-content: space;
+  align-items: first baseline;
+}
+
+@media (max-width: 768px) {
+  .burger {
+    display: flex;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 30px;
+    background-color: #050505;
+    width: 180px;
+    border-radius: 8px;
+    padding: 10px 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
+
+  .menu li {
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .menu li a {
+    color: white;
+    display: block;
+    padding: 10px;
+  }
+
+  #menu-toggle:checked ~ .menu {
+    display: flex;
+  }
+
+  #menu-toggle:checked + .burger span:nth-child(1) {
+    transform: rotate(45deg) translate(4px, 5px);
+  }
+  #menu-toggle:checked + .burger span:nth-child(2) {
+    opacity: 0;
+  }
+  #menu-toggle:checked + .burger span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
   }
 }
 
@@ -377,7 +447,7 @@ label,
 
   .info-card-content h2 {
     margin: 0 0 10px 0;
-    font-size: 1.4em; /* Sesuaikan ukuran judul */
+    font-size: 1.4em;
   }
 
   .info-card-content p {
@@ -483,7 +553,7 @@ label,
     padding: 18px;
     max-width: 300px;
     gap: 12px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Tingkatkan shadow untuk depth */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   }
 
   .info-card img {

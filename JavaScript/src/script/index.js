@@ -47,6 +47,7 @@ function submitFeedback(event) {
   const alertElement = document.querySelectorAll(".alert-container div");
 
   if (!text_area.value) err.push(text_area.id);
+
   input.forEach((element) => {
     if (!element.value && element.attributes.type.value !== "submit") {
       err.push(element.attributes.type.value);
